@@ -6,25 +6,32 @@
 <meta charset="utf‐8">
 </head>
 <body onload="loadAlert()">
-    <h1>Exercice 1</h1>
-   <p id="parag1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-   consequat.
-   </p>
-   <button onclick="changer_style()">Changer Style</button>
+    <div class="exo">
+        <h1>Exercice 1</h1>
+        <p id="parag1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+        </p>
+        <button onclick="changer_style()">Changer Style</button>
+    </div>
+    
 
-   <h1>Exercice 2</h1>
-   <p><a id="w3r" type="text/html" hreflang="en‐us" rel="nofollow" target="_self"
-    href="https://www.w3resource.com/">w3resource</a></p>
-    <button onclick="getAttributes()">Click here to get attributes value</button>
-    <p id="href"></p>
-    <p id="hreflang"></p>
-    <p id="rel"></p>
-    <p id="target"></p>
-    <p id="type"></p>
+   <div class="exo">
+    <h1>Exercice 2</h1>
+    <p><a id="w3r" type="text/html" hreflang="en‐us" rel="nofollow" target="_self"
+     href="https://www.w3resource.com/">w3resource</a></p>
+     <button onclick="getAttributes()">Click here to get attributes value</button>
+     <p id="href"></p>
+     <p id="hreflang"></p>
+     <p id="rel"></p>
+     <p id="target"></p>
+     <p id="type"></p>
+    </div>
+   
 
-    <h1>Exercice 3</h1>
+    <div class="exo">
+        <h1>Exercice 3</h1>
     <form id="form1" onsubmit="getFormvalue(); return false;">
         First name: <input type="text" name="fname" value="David"><br>
         Last name: <input type="text" name="lname" value="Beckham"><br>
@@ -32,18 +39,27 @@
     </form>
     <p id="prenom"></p>
     <p id="nom"></p>
-
-    <h1>Exercice 4</h1>
-    <img onmouseover="imageAlert()" src="assets/pika.png" alt="Pikachu" id="pika">
-
-    <button onclick="clickAlert()">Click me!</button>
-
-    <div id="changeMe">
-        <button id="coolbutton" onclick="changeStuff()">Click me and something cool will happen</button>
-        <button id="normalbutton" onclick="doNotChangeStuff()">Click me and everything will go back to normal</button>
     </div>
+    
 
-    <img onmouseover="angryPupper()" onmouseout="goodPupper()" src="assets/pupper.jpg" alt="pomeranian pup" id="pupper">
+    <div class="exo">
+        <h1>Exercice 4</h1>
+        <div class="part">
+            <img onmouseover="imageAlert()" src="assets/pika.png" alt="Pikachu" id="pika">
+        </div>
+        <div class="part">
+            <button onclick="clickAlert()">Click me!</button>
+        </div>
+        <div class="part">
+            <div id="changeMe">
+                <button id="coolbutton" onclick="changeStuff()">Click me and something cool will happen</button>
+                <button id="normalbutton" onclick="doNotChangeStuff()">Click me and everything will go back to normal</button>
+            </div>
+        </div>
+        <div class="part">
+            <img onmouseover="angryPupper()" onmouseout="goodPupper()" src="assets/pupper.jpg" alt="pomeranian pup" id="pupper">
+        </div>
+    </div>    
 
    <script src="assets/exo.js"></script>
 </body>
