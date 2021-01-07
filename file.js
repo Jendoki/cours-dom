@@ -32,3 +32,21 @@ console.log(href);
 
 lien.setAttribute("href", "https://github.com/Jendoki");
 console.log(lien.href);
+
+var enfants = container.children;
+for (let enfant of enfants){
+    console.log(enfant);
+}
+
+function myFunction(){
+    document.getElementById("myDiv").classList.add("myStyle");
+}
+
+// var x = document.getElementById("myDiv").classList.length;
+// console.log(x);
+
+function affichePrenom(){
+    var name = document.getElementById("prenom").value;
+    document.getElementById("demo").innerHTML = name;
+
+}
