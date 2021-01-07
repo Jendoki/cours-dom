@@ -37,3 +37,38 @@ function getFormvalue() {
     console.log(lname);
     document.getElementById("nom").innerHTML = lname;
 }
+
+//EXO 4 
+function loadAlert(){
+    alert("The document is loaded");
+}
+
+function imageAlert(){
+    alert("Pika pika!");
+}
+
+function clickAlert(){
+    alert("Hello there!");
+}
+
+function changeStuff(){
+    var x = document.getElementById('changeMe');
+    var y = document.getElementById('coolbutton');
+    x.style.backgroundColor="purple";
+    y.style.backgroundColor="darkblue";
+    y.style.color="white";
+    y.style.padding="20px";
+    document.getElementById("coolbutton").innerHTML = "Wow, amazing!";
+}
+
+function doNotChangeStuff(){
+    var x = document.getElementById('changeMe');
+    var y = document.getElementById('coolbutton');
+    x.style.backgroundColor="";
+    y.style.backgroundColor="";
+    y.style.color="";
+    y.style.padding="";
+    document.getElementById("coolbutton").innerHTML = "No fun... Click me again!";
+}
+
+document.getElementsByTagName("body").addEventListener("load", loadAlert());
