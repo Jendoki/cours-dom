@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="assets/exo.css">
 <meta charset="utf‐8">
 </head>
-<body>
+<body onload="loadAlert()">
     <h1>Exercice 1</h1>
    <p id="parag1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -42,6 +42,8 @@
         <button id="coolbutton" onclick="changeStuff()">Click me and something cool will happen</button>
         <button id="normalbutton" onclick="doNotChangeStuff()">Click me and everything will go back to normal</button>
     </div>
+
+    <img onmouseover="angryPupper()" onmouseout="goodPupper()" src="assets/pupper.jpg" alt="pomeranian pup" id="pupper">
 
    <script src="assets/exo.js"></script>
 </body>

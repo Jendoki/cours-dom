@@ -71,4 +71,14 @@ function doNotChangeStuff(){
     document.getElementById("coolbutton").innerHTML = "No fun... Click me again!";
 }
 
-document.getElementsByTagName("body").addEventListener("load", loadAlert());
+function angryPupper(){
+    var img = document.getElementById("pupper");
+    img.setAttribute("src", "assets/angry.jpg");
+}
+
+function goodPupper(){
+    var img = document.getElementById("pupper");
+    img.setAttribute("src", "assets/pupper.jpg");
+}
+
+
